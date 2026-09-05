@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Contact SA Electric | Refrigerator, AC & IPS Repair Service</title>
+
+  <meta name="description"
+        content="Contact SA Electric for professional refrigerator, AC, IPS and electronics repair services. Get reliable electrical and electronic repair support from experienced technicians.">
+
+  <meta name="keywords"
+        content="SA Electric, refrigerator repair, AC repair, IPS repair, electronics repair, electrical service, refrigerator service, AC servicing">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#222;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:18px 8%;
+      background:#111;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#ffb703;
+      font-size:25px;
+      font-weight:bold;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffb703;
+    }
+
+
+    /* HERO */
+
+    .hero{
+      min-height:320px;
+
+      background:
+      linear-gradient(
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.72)
+      ),
+      url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=80");
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+
+      text-align:center;
+      padding:25px;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:48px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:700px;
+      line-height:1.7;
+      font-size:18px;
+    }
+
+
+    /* CONTACT SECTION */
+
+    .contact-section{
+      width:90%;
+      max-width:1100px;
+      margin:70px auto;
+
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:35px;
+    }
+
+
+    /* CONTACT INFO */
+
+    .contact-info{
+      background:white;
+      padding:35px;
+      border-radius:18px;
+
+      box-shadow:
+      0 8px 30px rgba(0,0,0,.08);
+    }
+
+    .contact-info h2{
+      font-size:30px;
+      margin-bottom:15px;
+      color:#ff9500;
+    }
+
+    .contact-info > p{
+      color:#666;
+      line-height:1.7;
+      margin-bottom:25px;
+    }
+
+
+    .info-box{
+      display:flex;
+      align-items:center;
+      gap:18px;
+
+      padding:18px;
+      margin-bottom:15px;
+
+      border-radius:12px;
+      background:#f7f7f7;
+
+      transition:.3s;
+    }
+
+    .info-box:hover{
+      transform:translateX(6px);
+      box-shadow:0 5px 18px rgba(0,0,0,.08);
+    }
+
+    .icon{
+      width:48px;
+      height:48px;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      border-radius:50%;
+      background:#ffb703;
+
+      font-size:22px;
+    }
+
+    .info-box h3{
+      font-size:17px;
+      margin-bottom:4px;
+    }
+
+    .info-box p,
+    .info-box a{
+      color:#666;
+      text-decoration:none;
+    }
+
+
+    /* FORM */
+
+    .contact-form{
+      background:white;
+      padding:35px;
+      border-radius:18px;
+
+      box-shadow:
+      0 8px 30px rgba(0,0,0,.08);
+    }
+
+    .contact-form h2{
+      font-size:30px;
+      margin-bottom:25px;
+      color:#ff9500;
+    }
+
+    .input-group{
+      margin-bottom:18px;
+    }
+
+    .input-group label{
+      display:block;
+      margin-bottom:7px;
+      font-weight:bold;
+    }
+
+    .input-group input,
+    .input-group textarea,
+    .input-group select{
+
+      width:100%;
+      padding:14px;
+
+      border:1px solid #ddd;
+      border-radius:9px;
+
+      outline:none;
+      font-size:15px;
+
+      transition:.3s;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus,
+    .input-group select:focus{
+      border-color:#ffb703;
+      box-shadow:0 0 0 3px rgba(255,183,3,.15);
+    }
+
+    textarea{
+      height:130px;
+      resize:none;
+    }
+
+    .submit-btn{
+      width:100%;
+      padding:15px;
+
+      border:none;
+      border-radius:9px;
+
+      background:#ffb703;
+      color:#111;
+
+      font-size:17px;
+      font-weight:bold;
+
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .submit-btn:hover{
+      background:#ff9500;
+      transform:translateY(-2px);
+    }
+
+
+    /* SERVICE AREA */
+
+    .service-area{
+      width:90%;
+      max-width:1100px;
+
+      margin:0 auto 70px;
+
+      padding:35px;
+
+      background:#111;
+      color:white;
+
+      border-radius:18px;
+
+      text-align:center;
+    }
+
+    .service-area h2{
+      color:#ffb703;
+      margin-bottom:15px;
+    }
+
+    .service-area p{
+      color:#ddd;
+      line-height:1.7;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .contact-section{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+  <div class="logo">
+    SA ELECTRIC
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <h1>Contact Us</h1>
+
+  <p>
+    Need reliable refrigerator, AC, IPS or electronics repair service?
+    Contact SA Electric today and get professional support from experienced technicians.
+  </p>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="contact-section">
+
+
+  <!-- INFORMATION -->
+
+  <div class="contact-info">
+
+    <h2>Get In Touch</h2>
+
+    <p>
+      Have a repair problem or need an electronics service?
+      We are here to help. Contact SA Electric for professional
+      electrical and electronics repair solutions.
+    </p>
+
+
+    <div class="info-box">
+
+      <div class="icon">📞</div>
+
+      <div>
+        <h3>Call Us</h3>
+        <a href="tel:+8801739677547">
+          +880 1739677547
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <div class="icon">💬</div>
+
+      <div>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/+8801707426021">
+          ABU KALAM AJAD
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <div class="icon">✉️</div>
+
+      <div>
+        <h3>Email</h3>
+        <a href="mailto:saelectric@gmail.com">
+          saelectric@example.com
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <div class="icon">📍</div>
+
+      <div>
+        <h3>Location</h3>
+        <p>
+          VAJANPUR & KALITOLA , TETULIYA  Bangladesh
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- CONTACT FORM -->
+
+  
+
+  </div>
+
+</section>
+
+
+
+<!-- SERVICE AREA -->
+
+<section class="service-area">
+
+  <h2>Professional Electronics Service</h2>
+
+  <p>
+    SA Electric provides professional repair and servicing solutions
+    for refrigerators, air conditioners, IPS systems and various
+    electrical and electronic appliances. Our goal is to deliver
+    reliable service, quality workmanship and customer satisfaction.
+  </p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 SA Electric. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+</body>
+</html>

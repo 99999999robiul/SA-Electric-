@@ -1,0 +1,827 @@
+<!DOCTYPE html><html lang="bn"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- SEO -->  <title>SA Electric | AC, Fridge, TV & Electronics Repair Service</title><meta name="description"
+content="SA Electric provides professional AC, refrigerator, TV, motor repair, home wiring, CCTV installation and home automation services in Panchagarh, Bangladesh.">
+
+<meta name="keywords"
+content="SA Electric, AC repair, fridge repair, refrigerator repair, TV repair, motor repair, home wiring, CCTV installation, electronics repair, Panchagarh">
+
+  <meta name="author" content="SA Electric">
+  <meta name="robots" content="index, follow">  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      background-color: rgb(155, 180, 100);
+      font-family: Arial, sans-serif;
+    }
+
+
+    /* =========================
+       GLASS EFFECT
+    ========================= */
+
+    .glas {
+      background: rgba(255, 255, 255, 0.5);
+     /* backdrop-filter: blur(10px);*/
+      -webkit-backdrop-filter: blur(10px);
+
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+    }
+
+
+    /* =========================
+       HERO SECTION
+    ========================= */
+
+    .red {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .black {
+
+      position: fixed !important;
+      top:0;
+      left:0;
+
+      width: 100%;
+      height: 40px;
+
+      z-index: 9999;
+
+      padding: 5px;
+
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      background: rgba(255, 255, 255, 0.6);
+
+      backdrop-filter: blur(10px);
+    }
+
+
+    .black a {
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       HERO TEXT
+    ========================= */
+
+    .tex {
+
+      position: relative;
+
+      z-index: 2;
+
+      margin-top: 50px;
+
+      text-align: center;
+
+      text-shadow: 1px 1px 10px black;
+
+      opacity: 0.8;
+
+      animation: textShow 2s ease forwards;
+    }
+
+
+    @keyframes textShow {
+
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 0.8;
+        transform: translateY(0);
+      }
+
+    }
+
+
+    /* =========================
+       HERO IMAGES CONTAINER
+    ========================= */
+
+    .img {
+
+      position: absolute;
+
+      top: 50px;
+      left: 0;
+
+      width: 100%;
+      height: 150px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      z-index: 5;
+    }
+
+
+    /* LEFT IMAGE */
+
+    .ajad {
+
+      position: relative;
+      margin-top:20px;
+
+      z-index: 10;
+
+      animation: slideLeft 1.5s ease-out forwards;
+    }
+
+
+    /* RIGHT IMAGE */
+
+    .shamim {
+
+      position: relative;
+      margin-top:25px;
+
+      z-index: 10;
+
+      animation: slideRight 1.5s ease-out forwards;
+    }
+
+
+    @keyframes slideLeft {
+
+      from {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+    }
+
+
+    @keyframes slideRight {
+
+      from {
+        transform: translateX(200px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+    }
+
+
+    /* =========================
+       ROTATING PRODUCT CIRCLE
+    ========================= */
+
+    .product-animation {
+
+      position: absolute;
+
+      left: 40%;
+      top: 80%;
+
+      transform: translate(-50%, -50%);
+
+      width: 180px;
+      height: 90px;
+
+      overflow:;
+
+      z-index: 4;
+    }
+
+
+    .orbit {
+
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      border: 2px solid rgba(255, 255, 255, 0.5);
+
+      border-radius: 50%;
+
+      animation: rotateOrbit 10s linear infinite;
+    }
+
+
+    .product {
+
+      position: absolute;
+
+      width: 48px;
+      height: 48px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 2px solid white;
+
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .p1 {
+      top: -24px;
+      left: 64px;
+    }
+
+
+    .p2 {
+      top: 64px;
+      right: -24px;
+    }
+
+
+    .p3 {
+      bottom: -24px;
+      left: 64px;
+    }
+
+
+    .p4 {
+      top: 64px;
+      left: -24px;
+    }
+
+
+    @keyframes rotateOrbit {
+
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+
+    /* =========================
+       CONTACT LINKS
+    ========================= */
+
+    .contact-links {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 15px;
+
+      padding-top: 10px;
+    }
+
+
+    .round {
+      border-radius: 50%;
+    }
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    .size {
+
+      font-size: 12px;
+
+      text-align: center;
+
+      font-family: serif;
+
+      padding: 0 15px;
+    }
+
+
+    .servies {
+
+      text-align: center;
+
+      font-family: Verdana, sans-serif;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .aaa {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      padding: 5px;
+
+      gap: 5px;
+    }
+
+
+    .xx {
+
+      width: 50%;
+
+      padding: 5px;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .xx img {
+
+      max-width: 100%;
+
+      height: 250px;
+
+      padding: 5px;
+
+      border-radius: 20px;
+
+      object-fit: cover;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .button {
+
+      display: block;
+
+      height: 40px;
+
+      width: 180px;
+
+      background-color: darkgrey;
+
+      border: none;
+
+      border-radius: 10px;
+
+      margin: 10px auto;
+
+      cursor: pointer;
+      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .sevi {
+
+      text-align: center;
+
+      padding: 20px;
+    }
+
+
+    .sevi p {
+
+      line-height: 1.6;
+
+      margin: 10px 0 20px;
+    }
+
+
+    .sevi h5 {
+
+      margin-top: 20px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      background: #050505;
+
+      color: white;
+
+      padding: 50px 20px 20px;
+
+      text-align: center;
+    }
+
+
+    .footer-content h4 {
+
+      margin-bottom: 10px;
+    }
+
+
+    .footer-content p {
+
+      color: #aaa;
+    }
+
+
+    .social-links {
+
+      margin: 25px 0;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+    }
+
+
+    .social-links a {
+
+      text-decoration: none;
+
+      color: white;
+
+      background: #1a1a1a;
+
+      padding: 10px 15px;
+
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+
+
+    .social-links a:hover {
+
+      background: #333;
+
+      transform: translateY(-5px);
+    }
+
+
+    .copyright {
+
+      border-top: 1px solid #333;
+
+      padding-top: 20px;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       MOBILE RESPONSIVE
+    ========================= */
+
+    @media(max-width: 500px) {
+
+      .black {
+        gap: 15px;
+      }
+
+      .black a {
+        font-size: 12px;
+      }
+
+      .product-animation {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+
+      .ajad img,
+      .shamim img {
+        width: 90px;
+        height: auto;
+      }
+
+    }
+
+  </style></head><body>  <!-- HERO SECTION -->  <div class="red glas"><!-- NAVBAR -->
+
+<div class="black">
+
+  <div>
+    <img src="logo.png" height="30" width="60">
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="ser.html">Services</a>
+  <a href="con.html">Contact</a>
+
+</div>
+
+
+<!-- HERO TEXT -->
+
+<div class="tex">
+  <b>Smart Solution by Smart Services</b>
+</div>
+
+
+<!-- HERO IMAGES -->
+
+<div class="img">
+
+
+  <!-- LEFT IMAGE -->
+
+  <div class="ajad">
+
+    <img src="aa.png" height="150" width="110">
+
+  </div>
+
+
+  <!-- ROTATING PRODUCTS -->
+
+  <div class="product-animation">
+
+    <div class="orbit">
+
+      <img class="product p1" src="box.jpeg">
+
+      <img class="product p2" src="motor.jpeg">
+
+      <img class="product p3" src="tv.jpeg">
+
+      <img class="product p4" src="cam.jpeg">
+
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT IMAGE -->
+
+  <div class="shamim">
+
+    <img src="ss.png" height="150" width="110">
+
+  </div>
+
+
+</div>
+
+  </div>  <br>
+  <br>  <!-- CONTACT ICONS -->  <div class="contact-links"><a href="https://wa.me/8801707426021" target="_blank">
+  <img class="round" src="app.jpeg" height="30" width="30">
+</a>
+
+
+<a href="https://www.facebook.com/share/1GyXCDL92m/" target="_blank">
+  <img src="Facebook.png" height="30" width="30">
+</a>
+
+
+<a href="https://wa.me/8801739677547" target="_blank">
+  <img class="round" src="app.jpeg" height="30" width="30">
+</a>
+
+
+<a href="https://www.facebook.com/share/19Xkpz2Yq5/" target="_blank">
+  <img src="Facebook.png" height="30" width="30">
+</a>
+
+
+<a href="mailto:saelectrik999@gmail.com">
+  <img src="gmail.jpeg" height="30" width="30">
+</a>
+
+  </div>  <br>
+  <br>  <!-- DESCRIPTION -->  <div class="size"><p>
+  FRIDGE, AC, IPS এবং (মোটর, ফেন, টিভি, সাউন্ড বক্স, ওয়াশিং মেশিন,
+  রাইস কুকার ও অন্যান্য) ইলেকট্রনিক্স ডিভাইস—অভিজ্ঞ টেকনিশিয়ানের মাধ্যমে
+  দ্রুত ও নির্ভরযোগ্য সমাধান পান।
+</p>
+
+  </div>  <br>
+  <br>  <h3 class="servies">OUR SERVICES</h3>  <br>  <!-- SERVICES -->  <div class="glas"><div class="aaa">
+
+  <div class="xx glas">
+
+    <b>AC & FRIDGE</b>
+
+    <img src="box.jpeg">
+
+  </div>
+
+
+  <div class="xx glas">
+
+    <b>SOUND BOX</b>
+
+    <img src="boxx.jpeg">
+
+  </div>
+
+</div>
+
+
+
+<div class="aaa">
+
+  <div class="xx glas">
+
+    <b>MOTOR</b>
+
+    <img src="motor.jpeg">
+
+  </div>
+
+
+  <div class="xx glas">
+
+    <b>TV</b>
+
+    <img src="tv.jpeg">
+
+  </div>
+
+</div>
+
+
+
+<div class="aaa">
+
+  <div class="xx glas">
+
+    <b>HOME WIRING</b>
+
+    <img src="w.jpeg">
+
+  </div>
+
+
+  <div class="xx glas">
+
+    <b>CAMERA SETTING</b>
+
+    <img src="cam.jpeg">
+
+  </div>
+
+</div>
+
+
+    <a href="ser.html" class="button"> GET SERVIES</a>
+
+  </div>  <hr>  <br>
+  <br>  <!-- ABOUT SERVICES -->  <div class="sevi glas"><h3>ABOUT OUR SERVICES</h3>
+
+
+<p>
+  আমরা বিভিন্ন ধরনের ইলেকট্রিক্যাল ও ইলেকট্রনিক্স সমস্যার নির্ভরযোগ্য সমাধান দিয়ে থাকি।
+  দক্ষতা ও যত্নের সাথে প্রতিটি কাজ সম্পন্ন করাই আমাদের লক্ষ্য।
+</p>
+
+
+<h5>❄️ AIR CONDITIONING & REFRIGERATION</h5>
+
+<p>
+  এসি ও রেফ্রিজারেশনের বিভিন্ন ধরনের সেবা প্রদান করা হয়।
+  এসি সেটআপ, সার্ভিসিং এবং বিভিন্ন সমস্যার সমাধানের পাশাপাশি
+  সকল ধরনের ফ্রিজ ও রেফ্রিজারেটর মেরামতের কাজ করা হয়।
+</p>
+
+
+<h5>🔊 SOUND SYSTEM</h5>
+
+<p>
+  বিভিন্ন অনুষ্ঠান ও প্রয়োজনের জন্য সাউন্ড সিস্টেম ভাড়ার সুবিধা রয়েছে।
+  এছাড়াও সাউন্ড বক্স ও সাউন্ড সিস্টেম মেরামত করা হয়।
+  আপনার প্রয়োজন অনুযায়ী কাস্টমাইজড সাউন্ড সিস্টেম তৈরি করেও দেওয়া হয়।
+</p>
+
+
+<h5>⚙️ MOTOR REPAIR</h5>
+
+<p>
+  বিভিন্ন ধরনের বৈদ্যুতিক মোটর মেরামত করা হয়,
+  যেমন AC Motor ও DC Motor।
+</p>
+
+
+<h5>📺 TV REPAIR</h5>
+
+<p>
+  পুরাতন CRT বা Box TV থেকে শুরু করে আধুনিক Smart ও Non-Smart TV পর্যন্ত
+  বিভিন্ন ধরনের টিভি মেরামতের সেবা প্রদান করা হয়।
+</p>
+
+
+<h5>🏠 HOME WIRING</h5>
+
+<p>
+  বাসা-বাড়ির সম্পূর্ণ ইলেকট্রিক্যাল ওয়্যারিংয়ের কাজ করা হয়।
+  নতুন বাড়ির ওয়্যারিং ও পুরাতন ওয়্যারিং মেরামত করা হয়।
+</p>
+
+
+<h5>📹 CCTV CAMERA & SECURITY</h5>
+
+<p>
+  বাসা, অফিস ও প্রতিষ্ঠানের নিরাপত্তার জন্য
+  CCTV Camera সেটআপ ও ইনস্টলেশন করা হয়।
+</p>
+
+
+<h5>🏡 HOME AUTOMATION</h5>
+
+<p>
+  প্রযুক্তির মাধ্যমে আপনার ঘরকে আরও স্মার্ট ও সুবিধাজনক করে তুলুন।
+  আমরা প্রয়োজন অনুযায়ী Home Automation Solution তৈরি করি।
+</p>
+
+
+<h4>YOUR TRUST, OUR PRIORITY</h4>
+
+<p>
+  আমাদের লক্ষ্য শুধু একটি যন্ত্র মেরামত করা নয়,
+  বরং আপনাকে একটি নির্ভরযোগ্য সমাধান দেওয়া।
+  মানসম্মত কাজ ও গ্রাহকের সন্তুষ্টিকে আমরা সর্বোচ্চ গুরুত্ব দিই।
+</p>
+
+  </div>  <!-- FOOTER -->  <footer i><div class="footer-content">
+
+  <h4>SA Electric</h4>
+
+  <p>সব ধরনের ইলেকট্রনিক্স সার্ভিস ও রিপেয়ারিং</p>
+
+
+  <div class="social-links">
+
+    <a href="tel:+8801576947654">📞 Call</a>
+
+    <a href="https://wa.me/8801739677547">
+      💬 WhatsApp
+    </a>
+
+    <a href="https://www.facebook.com/share/1DpQBae215/">
+      📘 Facebook
+    </a>
+
+    <a href="https://github.com/">
+      💻 GitHub
+    </a>
+
+    <a href="mailto:saelectrik999@gmail.com">
+      ✉️ Email
+    </a>
+
+  </div>
+
+
+  <p class="copyright">
+    © 2026 SA Electric | All Rights Reserved
+  </p>
+
+</div>
+
+  </footer></body>
+</html>
